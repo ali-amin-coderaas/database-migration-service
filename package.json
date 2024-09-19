@@ -1,0 +1,30 @@
+{
+	"name": "database-migration-service",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"migration:create": "sequelize migration:create --name",
+		"migrate": "sequelize db:migrate",
+		"migrate:rollback": "sequelize db:migrate:undo",
+		"migrate:undo:all": "sequelize db:migrate:undo:all",
+		"seed:create": "sequelize seed:generate --name",
+		"seed": "sequelize db:seed:all"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@eslint/js": "^9.10.0",
+		"eslint": "^9.10.0",
+		"globals": "^15.9.0",
+		"prettier": "^3.3.3"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"eslint-config-prettier": "^9.1.0",
+		"mysql2": "^3.11.3",
+		"sequelize": "^6.37.3",
+		"sequelize-cli": "^6.6.2"
+	}
+}
